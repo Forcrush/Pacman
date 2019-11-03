@@ -1,0 +1,5 @@
+cornerproblem中bfs/dfs对goal的找寻方式与Berkeley不一样
+
+Berkeley是一直进行搜寻 若搜寻到一个corner则将其加入一个列表同位置一起进stack/queue 直到遇到一个点 它的corner list长度为4
+
+此方法是进行dfs/bfs直到遇到第一个corner 然后再从该corner出发进行第二次dfs/bfs直到所有corner都找到
